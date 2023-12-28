@@ -1,0 +1,99 @@
+header{
+    height: 10vh;
+    line-height: 10vh;
+    background-image: linear-gradient(rgb(0, 63, 171), rgba(2, 38, 157, 0.9),rgba(0, 25, 150, 0.715),rgba(13, 34, 169, 0.5),rgba(2, 64, 103, 0));
+    color: white;
+    position: relative;
+    z-index: 999;
+    height: 70px;
+}
+
+.logo{
+    width: 150px;
+    margin-right: 30px;
+    color: rgb(71, 44, 242);
+    font-size:20px;
+    font-weight: 500;
+    display: contents;
+}
+
+header a{
+    color: #fff;
+    margin-left: 30px;
+}
+
+.icon{
+    quotes: 40px;
+    padding:10px ;
+    text-align: center;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+header button {
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.toggle{
+    display: none;
+}
+
+@media only screen and (max-width:768px){
+    header nav .flexSB{
+        display: none;
+    }
+    .account{
+        display: none;
+    }
+    .navMenu-list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(2, 2, 179);
+        width: 50%;
+        height: max-content;
+        z-index: 999;
+    }
+    header ul li{
+        margin-top: 30px;
+        padding: 0 50px;
+    }
+    .toggle{
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        margin: auto;
+        cursor: pointer;
+        background: none;
+    }
+}
+
+input {
+    border: none;
+    outline: none;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    color: #ffffff;
+    padding: 10px 0 10px 10px;
+}
+.searchbar{
+    display: flex;
+}
+
+.searchicon{
+    cursor: pointer;
+    background: none;
+    padding: 0;
+}
+
+header ul :hover{
+    border-bottom: 1px solid #fff;
+}

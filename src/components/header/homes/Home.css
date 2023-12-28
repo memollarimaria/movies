@@ -1,0 +1,133 @@
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.homeContainer{
+    position: relative;
+}
+
+.coverImage{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+
+.coverImage img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    margin-top: 30px;
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+.homeContainer .content{
+    padding-top: 60px;
+    padding-left: 80px;
+    max-height: 100vh;
+    margin-top: 30px;
+}
+
+.homeContainer h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    min-width: 800px;
+}
+.coverImage::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 88;
+    background-image: linear-gradient(to right bottom,rgba(13, 0, 88, 0.697), rgba(56, 79, 164, 0.237),rgba(99, 110, 166, 0.3),rgba(244, 244, 244, 0.449),rgb(255, 255, 255));
+}
+
+.homeContainer .rating{
+    margin: 10px 0 0 0;
+}
+
+.card-icon{
+    color: #e50813;
+    margin-right: 5px;
+}
+
+.rating label{
+    margin: 0 20px;
+}
+
+.rating span{
+    background-color: #6c757d;
+    padding: 5px;
+    columns: #fff;
+    font-weight: bold;
+}
+
+.homeContainer .cast{
+    margin: 20px 0;
+}
+
+.cast h4{
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.cast h4 span{
+    color: #e50813;
+}
+
+.playButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playButton .img {
+    position: relative;
+}
+
+.playButton img{
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.playButton button {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.playButton button:hover{
+    color: #e50813;
+    transition: 0.4s;
+}
+
+.margin{
+    margin-top: 50%;
+}
+
+.details{
+    min-height: 100vh;
+}

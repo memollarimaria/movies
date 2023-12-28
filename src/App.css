@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ body{
+  font-family: 'Poppins' sans-serif;
+  background-color: #06156d;
+  color: #fff;
+ }
+ a{
+  text-decoration: none;
+ }
+ ul{
+  list-style-type: none;
+ }
+ .flexSB{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .container{
+  max-width: 90%;
+  margin: auto;
+ }
+
+ button{
+  background-color:  #e50813;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 12px 40px;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+ }
+
+ .row{
+    width: 50%;
+ }
+
+ p{
+    line-height: 30px;
+ }
+
+ .flex{
+    display: flex;
+ }
+ .control-btn button {
+    background: none;
+    padding: 0;
+    width: 50px;
+    border: 2x solid rgba(255, 255, 255, 0.3);
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+ }
+
+ .control-btn .next{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+ }
+
+ .control-btn .prev{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    z-index: 99;
+ }
+
+ .heading h1{
+   font-weight: 500;
+   margin: 30px 0;
+ }
+
+ .heading a{
+   color:#e50813;
+ }
+
+ .moviebox{
+   width: 430px;
+   height: 300px;
+   position: relative;
+   transition: 0.5s;
+   border-left: 5px solid transparent;
+ }
+
+ .moviebox:hover{
+   cursor: pointer;
+   border-left: 5px solid #e50813;
+   transform: scale3d(1.1,1.1,1) translate3d(6%,0,0) perspective(31.25em);
+   box-shadow: 0 0 0.73em rgba(0, 0, 0, 0.9);
+   z-index: 100;
+ }
+
+ .moviebox::after{  
+   content:'';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 430px;
+   height: 300px;
+   z-index: -1;
+   background: linear-gradient(90deg,rgb(13, 0, 88), rgba(0, 15, 68, 0.4),rgba(12, 24, 83, 0.3),rgba(2, 12, 78, 0.449),rgba(0, 97, 157, 0));
+ }
+
+ .moviebox img{
+   position: absolute;
+   top:0;
+   left: 0;
+   z-index: -1;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+.moviebox .text{
+   padding: 70px 50px;
+}
+.moviebox h3{
+   font-weight: 500;
+   margin-bottom: 15px;
+}
+.moviebox button{
+   margin-top: 15px;
+   padding: 12px 20px;
+   font-size: 13px;
+   cursor: pointer;
+}

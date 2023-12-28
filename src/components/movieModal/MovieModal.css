@@ -1,0 +1,14 @@
+
+.btn{
+    background-color: transparent;
+    justify-content: end;
+    display: flex;
+    margin-bottom: 0; 
+}
+
+
+.videoPlay{
+    display: flex;
+    justify-content: center;
+    height: 540px;
+}

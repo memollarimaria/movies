@@ -1,0 +1,21 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pagbut{
+    background-color: #e3e6ebdc;
+    color: blue;
+    margin: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+.active{
+    background-color: blue;
+    color: #e3e6ebdc;
+}
+
+.pagination button:hover{
+  opacity: 0.8;
+}
